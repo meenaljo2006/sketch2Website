@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* TITLE */
+.logo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #d8971dd6;
+    width: 100%;
+    height: 60px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+#check:checked ~ .logo {
+    margin-left: 200px;
+}
+
+.logo img{
+    height: 45px;
+    width: 55px;
+    margin-left: 15px;
+}
+
+.logo h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px;
+    margin-left: 80px;   
+    color: white;
+}
+
+@media (max-width:362px) {
+    .logo h3{
+        font-size: 20px;
+        margin-left: 70px;
+    }
+    .logo img{
+        height: 40px;
+        width: 50px;
+    }
+
+}
+
+/* HAMBURGER BUTTON */
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left:20px;
+    top:28px;
+}
+
+/* SIDEBAR */
+.sidebar_menu{
+    position:fixed;
+    left:-250px;
+    bottom:-10px;
+    height: 100vh;
+    width:250px;
+    background-color:#1f1f1f;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+    transition:all 0.3s linear;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar_menu .btn_two i {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left:20px;
+    top:33px;
+    cursor:pointer;
+    transition:all 0.3s linear;  
+}
+
+.sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    margin-top:100px;
+}
+
+#check{
+    display: none;
+}
+
+.btn_one i:hover{
+    font-size: 35px;
+}
+
+.btn_two i:hover{
+    font-size: 32px;
+}
+
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+.nav-link {
+    color: #b0b0b0;
+    padding: 12px 24px;
+    display: block;
+    text-decoration: none;
+    
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.userLogin {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    background-color: #1e1e1e;
+}
+
+.nameLogo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #3f51b5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    line-height: 1.2;
+}
+
+#username {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+}
+
+#email {
+    font-size: 12px;
+    color: #aaa;
+    margin: 2px 0 0 0;
+}
+
+.logout{
+    position: absolute;
+    cursor: pointer;
+    left:210px;
+    color: white;
+}
+
+
+/* CONTENT PART */
+.main {
+    margin-left: 60px;
+    margin-right: 40px;
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#check:checked ~ .main {
+    margin-left: 300px; 
+}
+
+.main h2, .main h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+
+.demo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.demo video {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:450px) {
+    .main{
+        margin-left: 12px;
+    }
+    .main h2 {
+        font-size:18px ;
+    }
+    .main h1{
+        font-size: 25px;
+    }
+    
+}

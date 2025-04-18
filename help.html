@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="help.css">
+    <link rel="icon" href="assets/s2wIcon.png">
+    <title>Sketch2Web-Help</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="full_Box">
+        
+
+        <input type="checkbox" id="check">
+        
+        <!-- Sidebar Open Button -->
+        <div class="btn_one">
+            <label for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+
+        
+    
+        <!-- Sidebar Menu -->
+        <div class="sidebar_menu">
+            
+            <!-- Closing Sidebar -->
+            <div class="btn_two">
+                <label for="check">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+    
+            <!-- Sidebar Content -->
+            <div class="menu">
+                <a class="nav-link" href="dashboard.html">📊 Dashboard</a>
+                <a class="nav-link" href="projectList.html">📁 Projects</a>
+                <a class="nav-link active" href="help.html">❓Help</a>
+            </div>
+    
+            <!-- User Info -->
+            <div class="userLogin">
+                <div class="nameLogo" id="userInitials"></div>
+                <div class="user-details">
+                    <div id="username"></div>
+                    <div id="email"></div>
+                </div>
+                <div class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="logo">
+            
+            <h3>Sketch2Web</h3>
+            <img src="assets/s2wIcon.png" />
+        </div>
+
+        
+
+        <!-- Main Dashboard Content -->
+        <div class="main">
+            <h1>🆘 Help & Support</h1>
+            <p>Welcome to <b>Sketch2Web</b> – where your designs come to life as real, functional websites! Here’s everything you need to know to get started:</p>
+            <hr>
+            <h2>📌 What is Sketch2Web?</h2>
+            <p>Sketch2Web allows you to upload hand-drawn or digital UI sketches, and it will generate corresponding HTML/CSS code automatically – helping you fast-track your web development process.</p>
+            <hr>
+            <h2>🚀 How to Use Sketch2Web</h2>
+            <ol>
+                <li><b>Upload Your Sketch</b><br>
+                Make sure your sketch is clear and labeled (e.g., buttons, navbar, input fields).</li>
+                <br>
+    
+                <li><b>Click “Generate Code”</b><br>
+                Our AI processes the sketch and converts it into HTML/CSS.</li>
+                <br>
+    
+                <li><b>Preview</b><br>
+                View the generated web page.</li>
+                <br>
+        
+                <li><b>Copy Code</b><br>
+                Copy them to your clipboard.</li>
+            </ol>
+            <hr>
+            <h2>💡 Tips for Better Results</h2>
+            <ul>
+              <li>Use dark markers or pens on white paper for best visibility.</li>
+              <li>Clearly label UI elements like buttons, navbars, and inputs.</li>
+              <li>Keep layouts neat and avoid overlapping components.</li>
+            </ul>
+            <hr>
+            <h2>🎬 Watch a Quick Demo</h2>
+            <br>
+            <div class="demo">
+                <video controls autoplay loop>
+                    <source src="assets/demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        
+        </div>
+
+    </div>
+
+
+    <script src="help.js"></script>
+    
+
+    
+    
+</body>
+</html>

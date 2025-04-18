@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="assets/s2wIcon.png">
+    <title>Sketch2Web-dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="full_Box">
+        
+
+        <input type="checkbox" id="check">
+        
+        <!-- Sidebar Open Button -->
+        <div class="btn_one">
+            <label for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+
+        
+    
+        <!-- Sidebar Menu -->
+        <div class="sidebar_menu">
+            
+            <!-- Closing Sidebar -->
+            <div class="btn_two">
+                <label for="check">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+    
+            <!-- Sidebar Content -->
+            <div class="menu">
+                <a class="nav-link active" href="dashboard.html">📊 Dashboard</a>
+                <a class="nav-link" href="projectList.html">📁 Projects</a>
+                <a class="nav-link" href="help.html">❓Help</a>
+            </div>
+    
+            <!-- User Info -->
+            <div class="userLogin">
+                <div class="nameLogo" id="userInitials"></div>
+                <div class="user-details">
+                    <div id="username"></div>
+                    <div id="email"></div>
+                </div>
+                <div class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="logo">
+            
+            <h3>Sketch2Web</h3>
+            <img src="assets/s2wIcon.png" />
+        </div>
+
+        
+
+        <!-- Main Dashboard Content -->
+        <div class="main">
+
+            <h1>Dashboard</h1>
+            <p>Upload a wireframe sketch and transform it into code</p>
+    
+            <div class="upload-box">
+                <input type="text" id="Title" placeholder="Enter the Title of your Sketch">
+                <h3>Upload Your Sketch</h3>
+                <p>Click to browse files, Select your wireframe sketch and Wait for a while !</p>
+                <input type="file" id="sketchUpload" accept="image/*" hidden>
+                <button id="browseBtn">Browse Files</button>
+                <p id="fileName"></p>
+            </div>
+    
+            <button id="generateCodeBtn" style="display: none;">Generate Code</button>
+    
+            <div id="codePopup" class="popup">
+                <div class="popupContentBox">
+                    <span id="closePopup" class="close-btn">&times;</span>
+                    <pre id="popupCodeBox"></pre>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="dashboard.js"></script>
+    
+
+    
+    
+</body>
+</html>

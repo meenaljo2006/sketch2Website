@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectList.css">
+    <link rel="icon" href="assets/s2wIcon.png">
+    <title>Sketch2Web-Projects</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="full_Box">
+        
+        <input type="checkbox" id="check">
+        
+        <!-- Sidebar Open Button -->
+        <div class="btn_one">
+            <label for="check">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+    
+        <!-- Sidebar Menu -->
+        <div class="sidebar_menu">
+            
+            <!-- Closing Sidebar -->
+            <div class="btn_two">
+                <label for="check">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+    
+            <!-- Sidebar Content -->
+            <div class="menu">
+                <a class="nav-link" href="dashboard.html">📊 Dashboard</a>
+                <a class="nav-link active" href="projectList.html">📁 Projects</a>
+                <a class="nav-link" href="help.html">❓Help</a>
+            </div>
+    
+            <!-- User Info -->
+            <div class="userLogin">
+                <div class="nameLogo" id="userInitials"></div>
+                <div class="user-details">
+                    <div id="username"></div>
+                    <div id="email"></div>
+                </div>
+                <div class="logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="logo">
+            <h3>Sketch2Web</h3>
+            <img src="assets/s2wIcon.png" />
+        </div>
+
+        
+
+        <!-- Main Content -->
+        <div class="main">
+
+            <h1>Project History</h1>
+            <div class="projectList"></div>
+            
+            <div id="codePopup" class="popup hidden">
+                <div class="popup-content">
+                  <span class="close-btn">&times;</span>
+                  <div class="uploadPhoto"></div>
+                  <h3>Generated Code</h3>
+                  <h4>HTML</h4>
+                  <pre><code id="code-html"></code></pre>
+                  <h4>CSS</h4>
+                  <pre><code id="code-css"></code></pre>
+                  <h4>JAVASCRIPT</h4>
+                  <pre><code id="code-js"></code></pre>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="projectList.js"></script>
+    
+</body>
+</html>

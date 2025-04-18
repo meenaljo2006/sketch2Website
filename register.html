@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch2Web-SignUp</title>
+    <link rel="icon" href="assets/s2wIcon.png">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="fullPage">
+
+        <div class="leftSide">
+            <div class="logo">
+                <img src="assets/s2wIcon.png"/>
+                <h3>Sketch2Web</h3>
+            </div>
+            <div class="tabs">
+                <span class="active">Sign Up</span>
+                <span class="signIn">Sign In</span>
+            </div>
+
+            <h2>Create an account</h2>
+            <p>Start transforming your sketches to code</p>
+
+            <form id="registerForm">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+              <div id="username-error" class="error-message"></div>
+        
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+              <div id="email-error" class="error-message"></div>
+        
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+              <div id="password-error" class="error-message"></div>
+        
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" required>
+              
+              <button class="btn" >Create Account</button>
+            </form>
+
+            
+        </div>
+    
+        <div class="rightSide">
+          <img src="assets/register.png" alt="Sketch Layout" />
+          <h3>Transform Sketches into Code</h3>
+          <p>Upload your wireframe sketches and get production-ready HTML, CSS, and JavaScript in seconds.</p>
+          <ul>
+            <li>Instant code generation from sketches</li>
+            <li>Beautiful designs out of the box</li>
+            <li>AI-powered component recognition</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <script src="register.js"></script>
+
+</body>
+</html>
