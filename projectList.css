@@ -8,6 +8,11 @@ body{
     color: white;
 }
 
+.full_Box{
+    overflow-x: hidden;
+}
+
+
 /* TITLE */
 .logo{
     display: flex;

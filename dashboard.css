@@ -11,6 +11,7 @@ body{
 .full_Box{
     /* height: 100%; */
     z-index: 2;
+    overflow-x: hidden;
 }
 
 /* TITLE */
@@ -243,6 +244,10 @@ body{
     .main{
         margin-left: 50px;
     }
+    .upload-box img{
+        padding-right: 20px;
+
+    }
     
 }
 
@@ -270,6 +275,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 999;
+    overflow-x: auto;
 }
 
 .popupContentBox {

@@ -45,7 +45,7 @@ fetch("https://api.testproject.live/vision/api/wireframes/user/", {
       const card = document.createElement('div');
       card.className = 'project-card';
       card.innerHTML = `
-        <img src="http://13.50.217.154${project.image}" alt="${project.title}">
+        <img src="https://api.testproject.live${project.image}" alt="${project.title}">
         <h4>${project.title}</h4>
         <p>${project.description}</p>
         <button class="code">View Source Code</button>

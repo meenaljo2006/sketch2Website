@@ -25,7 +25,7 @@ body {
     background: #1e1e1e;
     display: flex;
     flex-direction: column;
-    /* overflow-y: auto;  */
+    overflow-y: auto;
 }
   
 .logo {
@@ -162,7 +162,7 @@ body {
     text-align: center;
     padding: 20px;
     min-height: 60px; 
-    margin-top: 100px;
+    margin-top: 200px;
 }
 .footer p{
     margin-bottom: 2px;
