@@ -302,3 +302,10 @@ body{
     font-size: 24px;
     cursor: pointer;
 }
+
+.footer {
+    color: #9f9d9d;
+    text-align: center;
+    padding: 20px;
+    min-height: 60px; 
+}

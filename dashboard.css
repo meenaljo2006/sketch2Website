@@ -301,3 +301,10 @@ body{
     white-space: pre-wrap;
     overflow-x: auto;
 }
+
+.footer {
+    color: #9f9d9d;
+    text-align: center;
+    padding: 20px;
+    min-height: 60px; 
+}
