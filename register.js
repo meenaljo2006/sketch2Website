@@ -4,6 +4,12 @@ btn.addEventListener("click", function(){
     window.location.href = 'login.html';
 });
 
+//REDIRECT FROM LOGO
+let logo = document.querySelector(".logo");
+logo.addEventListener("click", function(){
+    window.location.href = 'index.html';
+});
+
 // REDIRECTING TO DASHBOARD
 document.getElementById("registerForm").addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -26,7 +32,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
     };
   
     try {
-      const response = await fetch("http://13.50.217.154/users/register/", {
+      const response = await fetch("https://api.testproject.live/users/register/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)

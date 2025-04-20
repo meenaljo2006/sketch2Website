@@ -18,9 +18,15 @@ window.addEventListener("DOMContentLoaded", () => {
   
 });
 
+//REDIRECT FROM LOGO
+let logo = document.querySelector(".logo");
+logo.addEventListener("click", function(){
+    window.location.href = 'dashboard.html';
+});
+
 //SHOWING THE PROJECT LIST
 let accessToken = localStorage.getItem("accessToken");
-fetch("http://13.50.217.154/vision/api/wireframes/user/", {
+fetch("https://api.testproject.live/vision/api/wireframes/user/", {
   method: "GET",
   headers: {
     "Authorization": `Bearer ${accessToken}`, 

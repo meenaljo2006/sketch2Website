@@ -11,9 +11,15 @@ window.addEventListener("DOMContentLoaded", () => {
     
 });
 
-  // LOGOUT BUTTON
+// LOGOUT BUTTON
 let logoutbtn = document.querySelector(".logout");
 logoutbtn.addEventListener("click",function(){
   localStorage.clear();
-  window.location.href = "index.html";
+  window.location.href = "dashboard.html";
+});
+
+//REDIRECT FROM LOGO
+let logo = document.querySelector(".logo");
+logo.addEventListener("click", function(){
+    window.location.href = 'dashboard.html';
 });
