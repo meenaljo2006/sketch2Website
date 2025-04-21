@@ -189,6 +189,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    min-width: 250px;
 }
 
 #check:checked ~ .main {
@@ -262,11 +263,13 @@ body{
     }
     .main h1{
         text-align: center;
+        margin-right: 20px;
     }
     .projectList{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: 20px;
 
     }  
 }

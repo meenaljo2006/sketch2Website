@@ -191,6 +191,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family:'Courier New', Courier, monospace;
+    min-width: 250px;
 }
 
 #check:checked ~ .main {
